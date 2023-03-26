@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import menu from '../../public/menu hamburguer.svg'
 import detail from '../../public/detail.svg'
-import smile from '../../public/smile.svg'
+import git from '../../public/git.svg'
 import email from '../../public/mail.svg'
 import linkedin from '../../public/linkedin.svg'
-import phone from '../../public/phone.svg'
+import wh from '../../public/wh.svg'
 
 import code from '../../public/code.svg'
 import smartphone from '../../public/smartphone.svg'
@@ -42,19 +43,18 @@ export default function Home() {
         <main>
           <section className='flex flex-col md:flex-row md:justify-between md:mt-28'>
             <div>
-              <h1 className='font-bold text-xl sm:text-2xl mt-14 text-center'>
+              <h1 className='font-bold text-xl sm:text-4xl mt-14 text-center md:w-[240px]'>
                 Olá, eu sou o Luis Moraes :)
               </h1>
-              <h2 className='font-medium leading-5 text-[#828282] mt-2 text-center'>
+              <h2 className='font-medium text-base md:text-lg leading-5 text-[#828282] mt-2 md:mt-[18px] text-center md:text-start w-full md:w-[327px]'>
                 Desenvolvedor Front-End 
-                <br /> 
                 & Back-End
               </h2>
               <div className='flex justify-center mt-8'>
-                <button className='bg-[#00DF5E] text-[#171717] mr-3 text-xs px-7 py-2'>
+                <button className='bg-[#00DF5E] text-[#171717] mr-3 text-xs px-7 py-2 transition-opacity hover:opacity-90'>
                   Download CV
                 </button>
-                <button className='bg-[#171717] border-[0.697202px] border-[#333333] border-solid text-xs px-7 py-2'>
+                <button className='bg-[#171717] border-[0.697202px] border-[#333333] border-solid text-xs px-7 py-2 transition-color duration-200 hover:border-[#00DF5E]'>
                   Entrar em contato
                 </button>
               </div>
@@ -75,14 +75,14 @@ export default function Home() {
             
             <div className='w-full md:max-w-[924px] grid grid-cols-2 md:grid-cols-4 gap-y-11 mt-14 md:mt-20'>
               <div className='flex flex-col items-center'>
-                <div className='bg-[#212121] w-[62px] h-[62px] rounded-full flex justify-center items-center'>
-                  <Image src={smile} alt="" />
-                </div>
+                <a href='https://github.com/Luismkm' target="_blank" className='bg-[#212121] w-[62px] h-[62px]  rounded-full flex justify-center items-center transition-color ease-in duration-300 border-[1px] border-transparent hover:border-solid hover:border-spacing-1 hover:border-[#00DF5E]'>
+                  <Image src={git} alt="" />
+                </a>
                 <span className='font-bold text-lg mt-5'>
-                  Meu Nome
+                  GitHub
                 </span>
                 <span className='text-[#828282]'>
-                  Luis Moraes
+                  /Luismkm
                 </span>
               </div>
 
@@ -99,9 +99,9 @@ export default function Home() {
               </div>
 
               <div className='flex flex-col items-center'>
-                <div className='bg-[#212121] w-[62px] h-[62px] rounded-full flex justify-center items-center'>
+                <a href='https://www.linkedin.com/in/luismkm/' target="_blank" className='bg-[#212121] w-[62px] h-[62px] rounded-full flex justify-center items-center transition-color ease-in duration-300 border-[1px] border-transparent hover:border-solid hover:border-spacing-1 hover:border-[#00DF5E]'>
                   <Image src={linkedin} alt="" />
-                </div>
+                </a>
                 <span className='font-bold text-lg mt-5'>
                   LinkedIn
                 </span>
@@ -111,9 +111,9 @@ export default function Home() {
               </div>
 
               <div className='flex flex-col items-center'>
-                <div className='bg-[#212121] w-[62px] h-[62px] rounded-full flex justify-center items-center'>
-                  <Image src={phone} alt="" />
-                </div>
+                <a href={`https://api.whatsapp.com/send?phone=${5542991320857}`} target="_blank" rel="noopener noreferrer" className='bg-[#212121] w-[62px] h-[62px] rounded-full flex justify-center items-center transition-color ease-in duration-300 border-[1px] border-transparent hover:border-solid hover:border-spacing-1 hover:border-[#00DF5E]'>
+                  <Image src={wh} alt="" />
+                </a>
                 <span className='font-bold text-lg mt-5'>
                   Telefone
                 </span>
@@ -256,23 +256,23 @@ export default function Home() {
             <h3 className='text-2xl md:text-[2rem] font-bold mt-14 md:mt-[127px] mb-6 md:mb-7'>
               Minhas skills
             </h3>
-            <div className='grid grid-cols-3 xl:grid-cols-6 gap-5 md:gap-12'>
-              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333]'>
+            <div className='grid grid-cols-3 xl:grid-cols-6 gap-5 md:gap-11'>
+              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333] transition-color ease-in duration-300 border-transparent hover:border-solid hover:border-[1px] hover:border-[#00DF5E] hover:border-opacity-50'>
                 <Image src={html} alt="HTML icon" title='HTML 5' />
               </div>
-              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333]'>
+              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333] transition-color ease-in duration-300 border-transparent hover:border-solid hover:border-[1px] hover:border-[#00DF5E] hover:border-opacity-50'>
                 <Image src={css} alt="CSS icon" title='CSS 3' />
               </div>
-              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333]'>
+              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333] transition-color ease-in duration-300 border-transparent hover:border-solid hover:border-[1px] hover:border-[#00DF5E] hover:border-opacity-50'>
                 <Image src={ts} alt="TypeScript icon" title='TypeScript' />
               </div>
-              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333]'>
+              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333] transition-color ease-in duration-300 border-transparent hover:border-solid hover:border-[1px] hover:border-[#00DF5E] hover:border-opacity-50'>
                 <Image src={tailwind} alt="Tailwind icon" title='Tailwind CSS'/>
               </div>
-              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333]'>
+              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333] transition-color ease-in duration-300 border-transparent hover:border-solid hover:border-[1px] hover:border-[#00DF5E] hover:border-opacity-50'>
                 <Image src={react} alt="React icon" title='React' />
               </div>
-              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333]'>
+              <div className='flex justify-center items-center w-[90px] h-[90px] md:w-[150px] md:h-[150px] bg-[#212121] border-[1px] border-[#333333] transition-color ease-in duration-300 border-transparent hover:border-solid hover:border-[1px] hover:border-[#00DF5E] hover:border-opacity-50'>
                 <Image src={next} alt="Next.Js icon" title='Next Js' />
               </div>
             </div>

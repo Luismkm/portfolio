@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
   color: #F9F9F9;
+  overflow-x: hidden;
 }
 
 button {
