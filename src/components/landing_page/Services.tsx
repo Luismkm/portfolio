@@ -16,7 +16,7 @@ export function Services() {
                 img={service.img}
                 alt={service.alt}
                 title={service.title}
-                styles={service.styles || ''}
+                styles={service.styles || undefined}
               />
             )
           })}

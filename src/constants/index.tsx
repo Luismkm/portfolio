@@ -36,6 +36,9 @@ export const services = [
     img: code,
     alt: 'símbolo de maior e menor representando abertura e fechamneto de tag',
     title: 'Criação de sites',
+    styles:{
+      span: 'md:w-[164px]'
+    }
   },
   {
     img: manutence,
@@ -51,7 +54,10 @@ export const services = [
     img: api,
     alt: 'engrenagem representando a api',
     title: 'Desenvolvimento de APIs',
-    styles: 'xl:col-start-2 xl:col-end-3',
+    styles:{
+      container: 'xl:col-start-2 xl:col-end-3',
+      span: 'md:w-[270px]'
+    },
   },
 ]
 
