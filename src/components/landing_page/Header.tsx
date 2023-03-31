@@ -14,9 +14,17 @@ export function Header() {
           <li>Minhas skills</li>
         </ul>
       </nav>
-      <nav className='md:hidden'>
+      <button
+        className="md:hidden mr-1.5 inline-block rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal"
+        type="button"
+        data-te-offcanvas-toggle
+        data-te-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+        data-te-ripple-init
+        data-te-ripple-color="light"
+      >
         <Image src={menu} alt="" />
-      </nav>
+      </button>
     </header>
   )
 }

@@ -11,7 +11,7 @@ export function Skills() {
         {skills.map((skill) => {
           return(
             <Skill
-              key={skill.img}
+              key={skill.alt}
               img={skill.img}
               alt={skill.alt}
               title={skill.title}

@@ -6,7 +6,7 @@ export function Hero() {
   return(
     <section className='flex flex-col md:flex-row md:justify-between md:mt-28'>
       <div>
-        <h1 className='font-bold text-xl sm:text-[2.25rem] md:h-[94px] leading-10 mt-14 text-center md:w-[240px]'>
+        <h1 className='font-bold text-xl sm:text-[2.25rem] leading-[50px] mt-14 text-center md:text-start md:w-[240px]'>
           Olá, eu sou o Luis Moraes :)
         </h1>
         <h2 className='font-medium text-base md:text-lg leading-5 text-[#828282] mt-2 md:mt-[18px] text-center md:text-start w-full md:w-[327px]'>
