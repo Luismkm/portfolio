@@ -10,22 +10,27 @@ export function Hero() {
           Olá, eu sou o Luis Moraes :)
         </h1>
         <h2 className='font-medium text-base md:text-lg leading-5 text-[#828282] mt-2 md:mt-[18px] text-center md:text-start w-full md:w-[327px]'>
-          Desenvolvedor Front-End 
+          Desenvolvedor Front-End
           & Back-End
         </h2>
         <div className='flex justify-center mt-8'>
+        <a href="./LUIS MARCELO KRAUTIUK DE MORAES - FULLSTACK.pdf" download="LUIS MARCELO KRAUTIUK DE MORAES - FULLSTACK.pdf">
           <button className='bg-[#00DF5E] text-[#171717] mr-3 text-xs px-7 py-2 transition-opacity hover:opacity-90'>
             Download CV
           </button>
-          <button className='bg-[#171717] border-[0.697202px] border-[#333333] border-solid text-xs px-7 py-2 transition-color duration-200 hover:border-[#00DF5E]'>
-            Entrar em contato
-          </button>
+        </a>
+
+          <a href="https://api.whatsapp.com/send?phone=5542991320857" target='_blank'>
+            <button className='bg-[#171717] border-[0.697202px] border-[#333333] border-solid text-xs px-7 py-2 transition-color duration-200 hover:border-[#00DF5E]'>
+              Entrar em contato
+            </button>
+          </a>
         </div>
       </div>
       <Image
         className='hidden md:block'
-        src={detail} 
-        alt="" 
+        src={detail}
+        alt=""
       />
     </section>
   )
