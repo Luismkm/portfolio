@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import { Drawer } from '../components/drawer'
 import { Header, Hero, About, Projects, Services, Skills, Footer } from '../components/landing_page'
 
 export default function Home() {
