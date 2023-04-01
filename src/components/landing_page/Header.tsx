@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import menu from '../../assets/menu.svg'
+import { icons } from '../../../public/assets'
 import { useEffect, useState } from 'react'
 import { Drawer } from '../drawer'
 import Link from 'next/link'
@@ -54,7 +54,7 @@ export function Header() {
         data-te-ripple-init
         data-te-ripple-color="light"
       >
-        <Image src={menu} alt="" />
+        <Image src={icons.menu} alt="" />
       </button>
     </header>
     </>

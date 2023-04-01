@@ -1,30 +1,30 @@
-import { git, email, linkedin, whatsapp, code, manutence, smartphone, api, html, css, ts, tailwind, react, next } from '../assets'
+import { icons } from '../../public/assets'
 
 export const contacts = [
   {
     link: 'https://github.com/Luismkm',
-    img: git,
+    img: icons.git,
     alt: 'Icone do GitHub',
     title: 'GitHub',
     subTitle: '/Luismkm',
   },
   {
     link: null,
-    img: email,
+    img: icons.email,
     alt: 'Icone de e-mail',
     title: 'E-mail',
     subTitle: 'luismkm@hotmail.com',
   },
   {
     link: 'https://www.linkedin.com/in/luismkm/',
-    img: linkedin,
+    img: icons.linkedin,
     alt: 'Icone do Linkedin',
     title: 'LinkedIn',
     subTitle: 'in/luismkm',
   },
   {
     link: 'https://api.whatsapp.com/send?phone=5542991320857',
-    img: whatsapp,
+    img: icons.whatsapp,
     alt: 'Icone do Whatsapp',
     title: 'Whatsapp',
     subTitle: '(42) 9 91320857',
@@ -33,7 +33,7 @@ export const contacts = [
 
 export const services = [
   {
-    img: code,
+    img: icons.code,
     alt: 'símbolo de maior e menor representando abertura e fechamneto de tag',
     title: 'Criação de sites',
     styles:{
@@ -41,17 +41,17 @@ export const services = [
     }
   },
   {
-    img: manutence,
+    img: icons.manutence,
     alt: 'duas chaves cruzadas',
     title: 'Manutenção de sites',
   },
   {
-    img: smartphone,
+    img: icons.smartphone,
     alt: 'ícone de um smartphone',
     title: 'Sites responsivos',
   },
   {
-    img: api,
+    img: icons.api,
     alt: 'engrenagem representando a api',
     title: 'Desenvolvimento de APIs',
     styles:{
@@ -63,32 +63,32 @@ export const services = [
 
 export const skills = [
   {
-    img: html,
+    img: icons.html,
     alt: 'HTML icon',
     title: 'HTML 5',
   },
   {
-    img: css,
+    img: icons.css,
     alt: 'CSS icon',
     title: 'CSS 3',
   },
   {
-    img: ts,
+    img: icons.ts,
     alt: 'TypeScript icon',
     title: 'TypeScript',
   },
   {
-    img: tailwind,
+    img: icons.tailwind,
     alt: 'Tailwind icon',
     title: 'Tailwind CSS',
   },
   {
-    img: react,
+    img: icons.react,
     alt: 'React icon',
     title: 'React',
   },
   {
-    img: next,
+    img: icons.next,
     alt: 'Next.Js icon',
     title: 'Next Js',
   },

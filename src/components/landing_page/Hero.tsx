@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import detail from '../../assets/detail.svg'
+import { icons } from '../../../public/assets'
 
 export function Hero() {
   return(
@@ -29,7 +29,7 @@ export function Hero() {
       </div>
       <Image
         className='hidden md:block'
-        src={detail}
+        src={icons.detail}
         alt=""
       />
     </section>
