@@ -2,7 +2,7 @@ import Project from "../Project";
 
 export function Projects() {
   return(
-    <section className='flex flex-col justify-center items-center'>
+    <section id="project" className='flex flex-col justify-center items-center'>
       <h3 className='text-2xl md:text-[2rem] font-bold mt-14 md:mt-[127px] mb-8'>
         Projetos
       </h3>

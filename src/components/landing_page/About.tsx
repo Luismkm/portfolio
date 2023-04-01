@@ -3,7 +3,7 @@ import Contact from "../Contact"
 
 export function About() {
   return(
-    <section className='mt-14 flex flex-col justify-center items-center text-center'>
+    <section id="about" className='mt-14 flex flex-col justify-center items-center text-center'>
       <h3 className='text-2xl md:text-[2rem] font-bold'>
         Sobre mim
       </h3>
@@ -12,8 +12,8 @@ export function About() {
       </p>
       <div className='w-full md:max-w-[924px] grid grid-cols-2 md:grid-cols-4 gap-y-11 mt-14 md:mt-20'>
         {contacts.map((contact) => {
-          return ( 
-            <Contact 
+          return (
+            <Contact
               key={contact?.title}
               link={contact.link || ''}
               img={contact.img}

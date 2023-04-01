@@ -3,7 +3,7 @@ import Skill from "../Skill"
 
 export function Skills() {
   return(
-    <section className='flex flex-col justify-center items-center mb-[56px] md:mb-[185px]'>
+    <section id="skill" className='flex flex-col justify-center items-center mb-[56px] md:mb-[185px]'>
       <h3 className='text-2xl md:text-[2rem] font-bold mt-14 md:mt-[127px] mb-6 md:mb-7'>
         Minhas skills
       </h3>
@@ -16,7 +16,7 @@ export function Skills() {
               alt={skill.alt}
               title={skill.title}
             />
-          ) 
+          )
         })}
       </div>
     </section>
