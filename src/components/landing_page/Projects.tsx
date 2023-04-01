@@ -1,4 +1,8 @@
-import Project from "../Project";
+import Image from 'next/image'
+
+import { icons } from '../../../public/assets'
+import { projects } from '@/src/constants'
+import Project from '../Project'
 
 export function Projects() {
   return(
@@ -7,12 +11,17 @@ export function Projects() {
         Projetos
       </h3>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 md:gap-y-8 md:gap-x-11'>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projects.map((project) => (
+          <Project
+            link={project.link}
+            key={project.link}
+            img={project.img}
+            title={project.title}
+            technologies={project.technologies}
+            imgBoxStyles={project.imgBoxStyles}
+            imgStyles={project.imgStyles}
+          />
+        ))}
       </div>
     </section>
   )

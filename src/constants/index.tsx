@@ -93,3 +93,46 @@ export const skills = [
     title: 'Next Js',
   },
 ]
+
+export const projects = [
+  {
+    link: 'https://doctor-care-luismkm.netlify.app',
+    img: icons.doctorcare,
+    title: 'DoctorCare',
+    technologies: 'Tecnologias: React, Tailwind e TS.',
+    imgBoxStyles: 'bg-slate-50',
+    imgStyles: 'w-[55%] h-[55%]',
+  },
+  {
+    link: 'https://github.com/Luismkm/front-kdmail',
+    img: icons.mailgo,
+    title: 'Mailgo.',
+    technologies: 'Tecnologias: React, Chackra Ui, Node, TS...',
+    imgBoxStyles: 'bg-[#171717]',
+    imgStyles: 'w-[40%] h-[40%]',
+  },
+  {
+    link: 'https://fashion-luismkm.netlify.app',
+    img: icons.fashion,
+    title: 'Fashion',
+    technologies: 'Tecnologias: React, Tailwind.',
+    imgBoxStyles: 'bg-slate-50',
+    imgStyles: 'w-[50%] h-[50%]',
+  },
+  {
+    link: 'https://github.com/Luismkm/SpaceFound-Backend',
+    img: icons.spacefound,
+    title: 'SpaceFound - API',
+    technologies: 'Tecnologias: Node, TS, TDD, Design Patterns',
+    imgBoxStyles: 'bg-[#171717]',
+    imgStyles: 'w-[50%] h-[50%]',
+  },
+  {
+    link: 'https://github.com/Luismkm/api-nestjs-mailgo',
+    img: icons.apirest,
+    title: 'API Nest',
+    technologies: 'Tecnologias: Nest, Prisma, TS, Postgres, JWT, Docker, Rabbit MQ',
+    imgBoxStyles: 'bg-slate-50',
+    imgStyles: 'w-[25%] h-[25%]',
+  }
+]

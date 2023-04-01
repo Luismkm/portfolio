@@ -15,4 +15,9 @@ export const icons = {
   tailwind: require('./tailwind.svg').default,
   react: require('./react.svg').default,
   next: require('./next.svg').default,
+  mailgo: require('./mailgo.svg').default,
+  doctorcare: require('./doctorcare.svg').default,
+  fashion: require('./fashion.svg').default,
+  spacefound: require('./spacefound.svg').default,
+  apirest: require('./apirest.svg').default,
 };
