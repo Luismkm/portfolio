@@ -11,7 +11,7 @@ interface ProjectProps {
 
 export default function Project({ link, img, title, technologies, imgBoxStyles, imgStyles }:ProjectProps){
   return(
-    <div className='flex flex-col justify-center items-center w-[312px] md:w-[350px] h-[174px] md:h-[240px] bg-[#212121]'>
+    <div className='flex flex-col justify-center items-center w-[312px] md:w-[350px] h-[174px] md:h-[240px] bg-gray-800'>
       <a href={link} target='_blank'>
         <div className={`${imgBoxStyles} flex justify-center items-center w-[275px] md:w-[300px] h-[100px] md:h-[130px] transition-opacity duration-300 ease-in-out opacity-80 hover:opacity-100`}>
           <Image className={imgStyles} src={img} alt="" />
@@ -21,7 +21,7 @@ export default function Project({ link, img, title, technologies, imgBoxStyles, 
         <span className='text-[0.8125rem] md:text-lg mt-2'>
           {title}
         </span>
-        <span className='text-[0.625rem] md:text-sm text-[#828282]'>
+        <span className='text-[0.625rem] md:text-sm text-gray-400'>
           {technologies}
         </span>
       </div>

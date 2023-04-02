@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { menu } from "../constants";
 
 function Drawer({isOpen, setIsMenuOpen}:any) {
   return (
     <div
-      className="invisible fixed bottom-0 top-0 right-0 z-[1045] flex modal overflow-hidden w-full max-w-full translate-x-full flex-col border-none bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out bg-[#171717] [&[data-te-offcanvas-show]]:transform-none"
+      className="invisible fixed bottom-0 top-0 right-0 z-[1045] flex modal overflow-hidden w-full max-w-full translate-x-full flex-col border-none bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out bg-primary [&[data-te-offcanvas-show]]:transform-none"
       tabIndex={-1}
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
@@ -35,34 +36,16 @@ function Drawer({isOpen, setIsMenuOpen}:any) {
     </div>
     <div className="flex flex-col justify-center items-center gap-y-10 offcanvas-body flex-grow">
       <ul className="flex flex-col gap-10 uppercase -mt-20">
-        <li
-          className={`${isOpen ? 'menu-item' : ''} transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80`}
-          onClick={() => setIsMenuOpen(isOpen ? false : true)}
-          data-te-offcanvas-dismiss
-        >
-          <Link href="#about">Sobre mim</Link>
-        </li>
-        <li
-          className={`${isOpen ? 'menu-item' : ''} transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80`}
-          onClick={() => setIsMenuOpen(isOpen ? false : true)}
-          data-te-offcanvas-dismiss
-        >
-          <Link href="#project">Projetos</Link>
-        </li>
-        <li
-          className={`${isOpen ? 'menu-item' : ''} transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80`}
-          onClick={() => setIsMenuOpen(isOpen ? false : true)}
-          data-te-offcanvas-dismiss
-        >
-          <Link href="#service">Serviços</Link>
-        </li>
-        <li
-          className={`${isOpen ? 'menu-item' : ''} transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80`}
-          onClick={() => setIsMenuOpen(isOpen ? false : true)}
-          data-te-offcanvas-dismiss
-        >
-          <Link href="#skill">Minhas skills</Link>
-        </li>
+        {menu.map((item) => (
+          <li
+            key={item.href}
+            className={`${isOpen ? 'menu-item' : ''} transition-colors duration-500 ease-out hover:text-secondary hover:opacity-80`}
+            onClick={() => setIsMenuOpen(isOpen ? false : true)}
+            data-te-offcanvas-dismiss
+          >
+            <Link href={item.href}>{item.title}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   </div>

@@ -1,7 +1,7 @@
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import { icons } from '../../../public/assets'
-import { useEffect, useState } from 'react'
 
 interface CopiedProps {
   img: string,
@@ -10,7 +10,6 @@ interface CopiedProps {
 
 export default function Copied({ img, alt }:CopiedProps) {
   const[isCopiedVisible, setIsCopiedVisible] = useState(false)
-
 
   useEffect(() => {
     if(isCopiedVisible){
@@ -24,12 +23,12 @@ export default function Copied({ img, alt }:CopiedProps) {
 
   return(
     <>
-      <p className={`${ isCopiedVisible ? 'flex' : 'hidden' } gap-x-2 absolute -mt-8 text-[#00DF5E] w-auto h-auto px-3 rounded-full`} >
+      <p className={`${ isCopiedVisible ? 'flex' : 'hidden' } gap-x-2 absolute -mt-8 text-secondary w-auto h-auto px-3 rounded-full`} >
         <Image src={icons.copy} alt='' />
         copied
       </p>
       <div
-        className='btn-copy bg-[#212121] w-[62px] h-[62px] cursor-pointer  rounded-full flex justify-center items-center transition-color ease-in duration-300 border-[1px] border-transparent hover:border-solid hover:border-spacing-1 hover:border-[#00DF5E]'
+        className='btn-copy bg-gray-800 w-[62px] h-[62px] cursor-pointer  rounded-full flex justify-center items-center transition-color ease-in duration-300 border-[1px] border-transparent hover:border-solid hover:border-spacing-1 hover:border-secondary'
         onClick={() => setIsCopiedVisible(true)}
         data-clipboard-target="#luismkm@hotmail.com"
       >

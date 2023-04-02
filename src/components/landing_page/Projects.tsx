@@ -1,6 +1,3 @@
-import Image from 'next/image'
-
-import { icons } from '../../../public/assets'
 import { projects } from '@/src/constants'
 import Project from '../Project'
 

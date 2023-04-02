@@ -1,5 +1,24 @@
 import { icons } from '../../public/assets'
 
+export const menu = [
+  {
+    href: '#about',
+    title: 'Sobre mim',
+  },
+  {
+    href: '#project',
+    title: 'Projetos',
+  },
+  {
+    href: '#service',
+    title: 'Serviços',
+  },
+  {
+    href: '#skill',
+    title: 'Minhas skills',
+  }
+]
+
 export const contacts = [
   {
     link: 'https://github.com/Luismkm',

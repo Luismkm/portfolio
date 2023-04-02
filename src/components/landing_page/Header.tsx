@@ -1,9 +1,11 @@
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+
+import { menu } from '@/src/constants'
 
 import { icons } from '../../../public/assets'
-import { useEffect, useState } from 'react'
 import { Drawer } from '../Drawer'
-import Link from 'next/link'
 
 export function Header() {
   const[isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,6 +25,19 @@ export function Header() {
     }
   }, [isMenuOpen]);
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const href = e.currentTarget.getAttribute("href");
+    const targetElement = document.querySelector(href!.substring(1)) as HTMLElement;
+
+    if (targetElement) {
+      window.scrollTo({
+        behavior: "smooth",
+        top: targetElement.offsetTop
+      });
+    }
+  };
+
   return (
     <>
     <Drawer isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
@@ -31,18 +46,13 @@ export function Header() {
       <h1 className='font-bold'>Portfólio</h1>
       <nav>
         <ul className="hidden md:flex md:w-[470px] md:justify-between">
-          <li className='transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80'>
-            <Link href="#about">Sobre mim</Link>
-          </li>
-          <li className='transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80'>
-            <Link href="#project">Projetos</Link>
-          </li>
-          <li className='transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80'>
-            <Link href="#service">Serviços</Link>
-          </li>
-          <li className='transition-colors duration-500 ease-out hover:text-[#00DF5E] hover:opacity-80'>
-            <Link href="#skill">Minhas skills</Link>
-          </li>
+          {menu.map((item) => (
+            <li
+              key={item.href}
+              className='transition-colors duration-500 ease-out hover:text-secondary hover:opacity-80'>
+              <Link onClick={handleClick} href={item.href}>{item.title}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
       <button
