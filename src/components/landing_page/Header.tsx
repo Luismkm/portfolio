@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { icons } from '../../../public/assets'
 import { useEffect, useState } from 'react'
-import { Drawer } from '../drawer'
+import { Drawer } from '../Drawer'
 import Link from 'next/link'
 
 export function Header() {
