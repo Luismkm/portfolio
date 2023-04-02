@@ -1,38 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 📋 Sobre
 
-## Getting Started
+<p>Este é o meu portfólio pessoal, desenvolvido utilizando React, Next.js, Tailwind CSS e TypeScript. O projeto é 100% responsivo, com layouts personalizados para desktop, tablet e dispositivos móveis.</p>
 
-First, run the development server:
+<br />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 💻 Principais tecnologias utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- React
+- Next
+- TypeScript
+- Tailwind
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<br />
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 📋 Características do projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ - <span style="font-weight: bold">Responsividade:</span> O projeto é totalmente responsivo, oferecendo uma ótima experiência de usuário em diferentes dispositivos.
 
-## Learn More
+ - <span style="font-weight: bold">Componentização:</span> O projeto utiliza conceitos de componentização para criar uma estrutura de código mais organizada e fácil de manter.
 
-To learn more about Next.js, take a look at the following resources:
+ - <span style="font-weight: bold">Estilização:</span> O projeto utiliza o Tailwind CSS para estilização, o que oferece uma grande flexibilidade e velocidade na criação de estilos personalizados.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ - <span style="font-weight: bold">Tipagem:</span> O projeto utiliza TypeScript para adicionar tipagem ao código, oferecendo maior segurança e facilidade na manutenção do projeto..
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+ <br/>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ✨ [https://portfolio-luismkm.vercel.app/](https://portfolio-luismkm.vercel.app/)
