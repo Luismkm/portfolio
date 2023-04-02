@@ -16,6 +16,7 @@ export function Header() {
         if (targetElement) {
           setTimeout(() => {
             targetElement.scrollIntoView({ behavior: "smooth" });
+            history.replaceState(null, '', window.location.pathname);
           }, 300);
         }
       }
