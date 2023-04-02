@@ -16,6 +16,7 @@ export const icons = {
   react: require('./react.svg').default,
   next: require('./next.svg').default,
   mailgo: require('./mailgo.svg').default,
+  copy: require('./copy.svg').default,
   doctorcare: require('./doctorcare.svg').default,
   fashion: require('./fashion.svg').default,
   spacefound: require('./spacefound.svg').default,
