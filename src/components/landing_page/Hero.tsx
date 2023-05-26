@@ -14,7 +14,7 @@ export function Hero() {
           & Back-End
         </h2>
         <div className='flex justify-center mt-8'>
-        <a href="./LUIS MARCELO KRAUTIUK DE MORAES - FULLSTACK.pdf" download="LUIS MARCELO KRAUTIUK DE MORAES - FULLSTACK.pdf">
+        <a href="./CV LUIS MARCELO KRAUTIUK DE MORAES.pdf" download="CV LUIS MARCELO KRAUTIUK DE MORAES.pdf">
           <button className='bg-secondary text-primary mr-3 text-xs px-7 py-2 transition-opacity hover:opacity-90'>
             Download CV
           </button>
